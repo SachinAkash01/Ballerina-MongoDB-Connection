@@ -1,4 +1,3 @@
-// import ballerina/io;
 import ballerinax/mongodb;
 
 mongodb:ConnectionConfig mongoConfig = {
@@ -19,12 +18,3 @@ public function insertData() {
 
     checkpanic mongoClient->insert(doc, collection);
 }
-
-//Update data on a collection
-// public function updateData() {
-//     string collection = "CollectionName";
-//     map<json> filter = {"NIC": "03226"};
-//     map<json> set = {"status": "Completed"};
-
-//     var result = mongoClient->update(collection, filter, set, true, false);
-// }
