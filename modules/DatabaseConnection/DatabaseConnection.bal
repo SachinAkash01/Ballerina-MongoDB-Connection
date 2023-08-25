@@ -13,6 +13,8 @@ mongodb:Client mongoClient = checkpanic new (mongoConfig);
 //Insert data to collection
 public function insertData() {
     string collection = "Requests";
+    
+    //Sample dataset
     map<json> doc = { "ID": 2, "NIC": "1234", "address":{
                         "no":"100", "street":"Park Street", "village":"Thibirigasyaya", "city":"Colombo","postalcode": 40000
                     },
